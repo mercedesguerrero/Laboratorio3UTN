@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/normalize.css">
+    <link rel="stylesheet" href="./css/estilos.css">
+    <script src="./js/script.js"></script>
+    <title>Bienes raices</title>
+</head>
+<body>
+    <header class="site-header ">
+        <div class="contenido-header contenedor">
+            <div class="barra">
+                <a href="index.html">
+                    <img src="./img/logo.svg" alt="logo bienes raices">
+                </a>
+
+                <nav class="navegacion">
+                    <a href="./nosotros.html">Nosotros</a>
+                    <a href="./anuncios.html">Anuncios</a>
+                    <a href="./blog.html">Blog</a>
+                    <a href="./contacto.html">Contacto</a>
+                </nav>
+            </div>
+            <h1>Venta de Casas y Departamentos </br> exclusivos de lujo</h1>
+        </div>
+    </header>
+
+    <section>
+
+        <div class="titulo-nosotros">
+            <h2>Más sobre nosotros</h2>
+        </div>
+        <div class="contenedor-iconos contenedor">
+            <div class="icono">
+                <img src="./img/icono1.svg" alt="imagen seguridad">
+                <h3 class="icon">Seguridad</h3>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Commodi numquam et consequuntur. Libero
+                    exercitationem
+                    ad temporibus est, pariatur quasi natus nisi eligendi inventore earum placeat nobis ipsa corrupti
+                    labore
+                    saepe.</p>
+            </div>
+            <div class="icono">
+                <img src="./img/icono2.svg" alt="imagen mejor precio">
+                <h3 class="icon">El mejor precio</h3>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Commodi numquam et consequuntur. Libero
+                    exercitationem
+                    ad temporibus est, pariatur quasi natus nisi eligendi inventore earum placeat nobis ipsa corrupti
+                    labore
+                    saepe.</p>
+            </div>
+            <div class="icono">
+
+                <img src="./img/icono3.svg" alt="imagen a tiempo">
+                <h3 class="icon">A tiempo</h3>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Commodi numquam et consequuntur. Libero
+                    exercitationem
+                    ad temporibus est, pariatur quasi natus nisi eligendi inventore earum placeat nobis ipsa corrupti
+                    labore
+                    saepe.</p>
+            </div>
+        </div>
+        </div>
+    </section>
+
+    <main>
+        <h2>Casas y departamentos en venta</h2>
+
+        <div class="contenedor-anuncios contenedor">
+
+            <div class="anuncio">
+                <img src="./img/anuncio1.jpg" alt="anuncio">
+                <div class="contenido-anuncio">
+                    <h3>Casa de lujo en el Lago</h3>
+                    <p>Casa en el lago con excelente vista, acabados de lujo a un excelñente precio.</p>
+                    <p class="precio">$3,000,000</p>
+                    <ul class="comodidades">
+                            <li>
+                                <img src="./img/icono_wc.svg" alt="icono baño">
+                                <p>2</p>
+                            </li>
+                            <li>
+                                <img src="./img/icono_estacionamiento.svg" alt="icono estacionamiento">
+                                <p>2</p>
+                            </li>
+                            <li>
+                                <img src="./img/icono_dormitorio.svg" alt="icono dormitorio">
+                                <p>4</p>
+                            </li>
+                        </ul>
+                    <a href="./anuncios.html" class="boton boton-naranja">Ver propiedad</a>
+                </div>
+            </div>    
+        </div>
+        <div class="contenedor contenedor-ver-todas">
+            <a href="./anuncios.html" class="boton boton-verde">Ver todas</a>
+        </div>
+    </main>
+
+    <form>
+
+        <fieldset>
+            <legend>Cargar nueva propiedad</legend>
+
+            <div>
+                <label for="txtTitulo">Titulo:</label>
+                <input type="text" id="txtTitulo" name="titulo" title="Name" required>
+            </div>
+
+            <label for="taDescripcion">Descripción:</label>
+            <div>
+                <textarea name="" id="taDescripcion" cols="30" rows="10"></textarea>
+            </div>
+
+            <fieldset>
+                <legend>Operacion:</legend>
+                <input type="radio" name="operacion" id="rdoVenta"><label for="rdoVenta">Venta</label>
+                <input type="radio" name="operacion" id="rdoAlquiler"><label for="rdoAlquiler" checked>Alquiler</label>
+                <!-- Tienen que tener el mismo name para que sean mutuamanete excluyentes -->
+            </fieldset>
+
+            <div>
+                <label for="txtDormitorios">Dormitorios:</label>
+                <input type="number" id="txtDormitorios" name="dormitorios" min="1" max="5" value="1" required>
+                <label for="txtBaños">Baños:</label>
+                <input type="number" id="txtBaños" name="baños" min="1" max="5" value="1" required>
+                <label for="txtEstacionamiento">Estacionamiento:</label>
+                <input type="number" id="txtEstacionamiento" name="estacionamiento" min="0" max="5" value="0">
+            </div>
+
+            <div>
+                <label for="txtPrecio">Precio:</label>
+                <input type="text" id="txtPrecio" name="precio" required>
+            </div>
+
+            <input type="submit" value="Cargar">
+            <input type="reset" value="Limpiar">
+
+        </fieldset>
+    </form>
+      
+    <footer>
+        <nav class="navegacion">
+            <a href="./nosotros.html">Nosotros</a>
+            <a href="./anuncios.html">Anuncios</a>
+            <a href="./blog.html">Blog</a>
+            <a href="./contacto.html">Contacto</a>
+        </nav>
+        <p>Todos los derechos reservados Lab III UTNFRA 2019 &copy;</p>
+    </footer>
+
+</body>
+</html>
